@@ -15,8 +15,7 @@ pipeline {
                 gitCheckout('https://github.com/kishancs2020/webAppExample.git', 'main')
             }
         }
-        stages {
-          stage('Hello') {
+        stage('Hello') {
             steps {
               welcome("devops class")
           }
