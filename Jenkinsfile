@@ -23,7 +23,7 @@ pipeline {
                 sshagent(['tomcat2']) {
                    
                   sh "echo $server"
-                  sh "scp -o StrictHostKeyChecking=no target/*.war ${user}@${server}:/opt/tomcat/webapps"                   
+                  sh "scp -o StrictHostKeyChecking=no targetd/*.war ${user}@${server}:/opt/tomcat/webapps"                   
                
                 }         
             }
