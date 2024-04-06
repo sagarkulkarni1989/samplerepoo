@@ -34,7 +34,7 @@ pipeline {
     //             }         
     //         }
     //     }
-    // }
+    }
     // post {
     //     always {
     //         emailext subject: 'Build Notification',
