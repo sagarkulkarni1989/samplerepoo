@@ -29,4 +29,12 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            emailext subject: 'Build Notification',
+                      body: 'Your Jenkins build has finished.',
+                      recipientProviders: [[$class: 'CulpritsRecipientProvider']],
+                      to: 'mesagarkulkarni@gmail.com'
+        }
+    }
 }
