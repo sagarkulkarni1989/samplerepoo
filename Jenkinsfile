@@ -5,11 +5,11 @@ pipeline {
   
     stages {
        
-        stage('Git Checkout') {
-            steps {
-                gitCheckout('https://github.com/kishancs2020/webAppExample.git', 'main')
-            }
-        }
+        // stage('Git Checkout') {
+        //     steps {
+        //         gitCheckout('https://github.com/kishancs2020/webAppExample.git', 'main')
+        //     }
+        // }
         stage('Git Checkout') {
             steps {
                 gitCheckout('https://github.com/kishancs2020/webAppExample.git', 'main')
